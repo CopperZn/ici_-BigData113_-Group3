@@ -48,12 +48,11 @@ install.packages(c("dplyr", "ggplot2", "stringr", "httr", "jsonlite", "readr"))
 
 This section outlines the structure of the project repository and describes the purpose of each file and folder.
 
-
 📁 data/
-- 「original_data_kpop.rankings」.csv           # Original data scraped from CircleChart.kr
-- 「cleaned_data_only.kpop」.csv         # Processed dataset with only Kpop songs
-- 「kpop_song.k/e.title」.csv         # Processed dataset with additional variables
-- 「Kpop_song.category」.csv         # Processed dataset with song title categorization
+- [original_data_kpop.rankings.csv](https://github.com/user-attachments/files/20647898/original_data_kpop.rankings.csv) # Original data scraped from CircleChart.kr
+- [cleaned_data_only.kpop.csv](https://github.com/user-attachments/files/20647911/cleaned_data_only.kpop.csv) # Processed dataset with only Kpop songs
+- [kpop_song.k_e.title.csv](https://github.com/user-attachments/files/20647913/kpop_song.k_e.title.csv) # Processed dataset with additional variables
+- [Kpop_song.category.csv](https://github.com/user-attachments/files/20647915/Kpop_song.category.csv) # Processed dataset with song title categorization
 
 📁 src/
 - 「data_cleaning」.R                           # R script for data cleaning and preprocessing
@@ -559,7 +558,7 @@ ggsave("h2.png", width = 9, height = 6, dpi = 300)
 ---
 
 ## Analysis
-
+```
 Our analysis explored how linguistic and stylistic characteristics of K-pop song titles influence their chart performance on CircleChart.kr, using a dataset of over 3,000 songs released between 2018 and 2023. The study examined three main hypotheses:
 
 **🔍 Hypotheses**
@@ -587,10 +586,11 @@ Textual features such as title length, English presence, and thematic category w
     •    **Title Length**: No significant correlation was found between title length (Korean or English) and chart rank. Shorter titles did not consistently perform better.
     •    **English Presence**: English titles showed no effect across the full dataset, but significantly outperformed non-English titles among the top 50 songs—indicating strategic value in high-stakes releases.
     •    **Thematic Features**: Most themes (e.g., Love, Friendship) had no measurable effect on rankings. The only statistically significant factor was **capitalization**: fully capitalized titles performed better, suggesting positive perception or algorithmic suppression.
+```
 ---
 
 ## ✅ Results
-
+```
 The analysis yielded the following insights regarding the relationship between K-pop song titles and their chart performance on CircleChart.kr:
 
 **📌 Hypothesis 1: Title Length**
@@ -633,7 +633,7 @@ The analysis yielded the following insights regarding the relationship between K
     •    **Visual formatting matters**—especially using excessive capitalization.
 
 These results address the central research question by showing that stylistic and linguistic features of K-pop titles have subtle, context-dependent impacts. While not dominant predictors, they contribute to the broader ecosystem of visibility, discoverability, and algorithmic prioritization.
-
+```
 ---
 
 ## 👥 Contributors
